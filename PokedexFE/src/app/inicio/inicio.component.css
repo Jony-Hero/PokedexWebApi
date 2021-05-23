@@ -1,0 +1,34 @@
+#Titulo{
+ /*  margin: 2%; */
+ font-size: 300%;
+ color:cyan;
+ 
+}
+
+.bg{
+  background-image: url(https://pbs.twimg.com/media/DuJBGUaXQAI_gkU.jpg);
+  background-attachment: fixed;
+  position: relative;
+  background-size: cover;
+ /*  height: 200%; */
+ width:100.8%;
+  padding: 2rem;
+}
+
+#botonDelete{
+  margin: 3px;
+}
+#update{
+  margin-right: 3px;
+}
+
+
+tr {
+  
+}
+
+th {
+  font-family: "Arvo", sans-serif;
+  color: #e35865;
+}
+

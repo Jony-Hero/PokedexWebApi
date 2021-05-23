@@ -1,0 +1,69 @@
+<form class="row m-0 bg" (ngSubmit)="onSubmit()" [formGroup]="form">
+  <div class="col-12 text-center" id="Titulo">Pokemon</div>
+  <div class="col-12 d-flex justify-content-center"><!-- padding-left: 42%; padding-right: auto; -->
+    <img [src]="pokemon.imagen" style="height: 350px; width: auto;" />
+  </div>
+
+  <div class="row space-rows" id="mitad1">
+    <div class="atributo col-md-4 my-2 text-center">
+      <label class="text-danger h2">NumeroP</label>
+      <input
+        type="text"
+        formControlName="numeroP"
+        class="form-control bg-dark text-light"
+        readonly
+      />
+    </div>
+
+    <div class="atributo col-md-4 my-2 text-center">
+      <label class="text-danger h2">Nombre</label>
+      <input
+        type="text"
+        formControlName="nombre"
+        class="form-control bg-dark text-light"
+        [readonly]="!modoEditar"
+      />
+    </div>
+
+    <div class="atributo col-md-4 my-2 text-center">
+      <label class="text-danger h2">Imagen</label>
+      <input
+        type="text"
+        formControlName="imagen"
+        class="form-control bg-dark text-light"
+        [readonly]="!modoEditar"
+      />
+    </div>
+
+    <div class="atributo col-md-4 my-2 text-center">
+      <label class="text-danger h2">Descripcion</label>
+      <input
+        type="text"
+        formControlName="descripcion"
+        class="form-control bg-dark text-light"
+        [readonly]="!modoEditar"
+      />
+    </div>
+
+    <div class="atributo col-md-4 my-2 text-center">
+      <label class="text-danger h2">Peso</label>
+      <input
+        type="text"
+        formControlName="peso"
+        class="form-control bg-dark text-light"
+        [readonly]="!modoEditar"
+      />
+    </div>
+    <div class="col-md-12 my-2">
+      <label class="text-danger h2">Tipo</label>
+      <input
+        type="text"
+        formControlName="tipo"
+        class="form-control bg-dark text-light"
+        [readonly]="!modoEditar"
+      />
+    </div>
+  </div>
+
+  <button *ngIf="modoEditar" type="submit" class="btn btn-danger" (click)="editarPokemon()">Guardar</button>
+</form>

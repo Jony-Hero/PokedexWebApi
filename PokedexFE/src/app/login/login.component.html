@@ -1,0 +1,49 @@
+<!-- <body id="fondo"> -->
+  <div class="bg">
+  <h1 class="col text-center" id="portada">Login</h1>
+  <div class="container-md ">
+    <div class="d-flex justify-content-center">
+      <div class="col-8">
+        <div class="form-group" id="usuario">
+          <label for="name">Usuario:</label>
+          <input type="name" [(ngModel)]="usuario" class="form-control" placeholder="name" id="name" required />
+        </div>
+        <!--  -->
+        <div class="form-group" id="pasword">
+          <label for="pwd">Password:</label>
+          <input type="password"  [(ngModel)]="password" class="form-control" placeholder="Password" id="pwd" required />
+        </div>
+        <!--  -->
+
+        <!--  , (click)="logearse()"   -->
+
+        <div class="container">
+          <div class="row">
+            <div class="col text-center">
+              <button type="submit" class="btn btn-primary" id="btn-login" (click)="logearse()">
+
+                Hacer login
+              </button>
+              <a id="registrar" class="link" routerLink="../signup">Registrarse</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- <h1 class="text-center mx-auto" style="color: red;" *ngIf="logeado==false">no se encontraron resultados</h1> -->
+        <!--  Logear() -->
+        <!-- </center>
+     </br>
+        <center> -->
+
+        <!-- </center> -->
+        <div class="alert alert-danger alert-dismissible" style="display: none" id="error">
+          <button type="button" class="close" data-dismiss="alert">
+            &times;
+          </button>
+          <strong>ERROR!</strong> Login incorrecto.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- </body> -->

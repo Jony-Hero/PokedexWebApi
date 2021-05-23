@@ -1,0 +1,47 @@
+#usuario {
+  margin: 30px;
+  font-size: 200%;
+  color:blue
+}
+
+#pasword {
+  margin: 30px;
+  font-size: 200%;
+  
+  color:blue
+}
+
+/* #btn-login{
+    margin-left: 200px;
+} */
+
+#registrar {
+  margin-left: 50px;
+  font-size: 200%;
+}
+
+#btn-login{
+  font-size: 150%;
+}
+
+#portada {
+  /* margin: 30px; */
+}
+
+.bg {
+  background-image: url(https://media.redadn.es/imagenes/paginas-planas-pokemaster_188502.jpg);
+  position: relative;
+  background-size: cover;
+  height: 100%;
+  padding: 2rem;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+body {
+  height: 100vh;
+  background-color: red;
+}
+

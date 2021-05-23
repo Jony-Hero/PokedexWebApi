@@ -1,0 +1,40 @@
+#logear{
+    margin-left: 50px;
+    color:yellow;
+    font-size: 150%;
+}  
+
+#user{
+    margin:30px;
+    color:black;
+    font-size: 150%;
+}
+
+#pasword{
+    margin:30px;
+    color:black;
+    font-size: 150%;
+}
+
+#pasword2{
+    margin:30px;
+    color:black;
+    font-size: 150%;
+}
+
+#portada{
+    margin:30px;
+    color:yellow;
+}
+
+#btn-register{
+  font-size: 120%;
+}
+
+.bg {
+  background-image: url(https://www.nintenderos.com/wp-content/uploads/2019/02/pokemon-espada-y-escudo.-1.jpg);
+  position: relative;
+  background-size: cover;
+  height: 100%;
+  padding: 2rem;
+}
